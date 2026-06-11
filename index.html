@@ -67,6 +67,26 @@
         font-style: italic;
         border: 1px dashed #999;
       }
+
+      /* Responsive container for embedding your Code.org App */
+      .app-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+      }
+
+      .app-frame {
+        width: 324px;
+        height: 620px;
+        border: none;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        border-radius: 10px;
+      }
     </style>
   </head>
   <body>
@@ -104,6 +124,13 @@
         <div class="gallery-item">[ Cat Doodle ]</div>
         <div class="gallery-item">[ Landscape Idea ]</div>
       </div>
+
+      <h2>My App Lab Project</h2>
+      <p>Check out the application I am building in App Lab! You can interact with it directly below:</p>
+      <div class="app-container">
+        <!-- Embedded Code.org App Link using /embed -->
+        <iframe class="app-frame" src="https://code.org"></iframe>
+      </div>
    
       <h2>My Goals for This Course</h2>
       <p>I want to learn how to design an app and how to build a fully functional app from scratch.</p>
@@ -115,5 +142,3 @@
     </div>
   </body>
 </html>
-
-
